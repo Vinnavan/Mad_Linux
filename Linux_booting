@@ -1,1 +1,16 @@
+hit space to enter in to uboot mode while booting to play these game!
 
+# Load the linux kernel image in to DDR memory from MMC0 (SD card) interface
+load mmc 0:1 0x82000000 uImage
+
+# Load the DTB (device tree binary) image to DDR memory from MMC 0 (SD card) interface
+am335x-boneblack.dtb
+load mmc 0:1 0x88000000 am335x-boneblack.dtb
+
+??
+send boot arguments to the linux kernel from u-boot
+setenv bootarg console=ttyo0,115200 root=
+
+boot form memory command
+
+boot 0x82000000 - 0x88000000
