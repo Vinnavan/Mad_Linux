@@ -9,7 +9,7 @@ load mmc 0:1 0x88000000 am335x-boneblack.dtb
 
 ??
 send boot arguments to the linux kernel from u-boot
-setenv bootarg console=ttyo0,115200 root=
+setenv bootarg console=ttyo0,115200 root=/dev/mmcblk0p2 rw
 
 boot form memory command
 
