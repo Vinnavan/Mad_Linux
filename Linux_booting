@@ -4,6 +4,7 @@ hit space to enter in to uboot mode while booting to play these game!
 fatloadusb 0:1 0x82000000 uimage
 fatload mmc 0:1 0x88000000 initramfs
 
+
 # Load the linux kernel image in to DDR memory from MMC0 (SD card) interface
 load mmc 0:1 0x82000000 uImage
 
